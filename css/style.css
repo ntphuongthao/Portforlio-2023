@@ -36,9 +36,9 @@
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h3-font-size: 1.125rem;
   --normal-font-size: 14px;
-  --small-font-size: 0.82rem;
+  --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
   /* FONT WEIGHT */
@@ -73,7 +73,7 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
-    --smaller-font-size: 0.82rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -102,6 +102,7 @@ body.dark-theme {
   padding-left: var(--mb-0-5);
   margin: 0;
   margin-top: -5px;
+  gap: var(--mb-0-75);
 }
 
 .change-theme {
@@ -176,7 +177,7 @@ img {
 
 /* ========== LAYOUT ========== */
 .container {
-  margin-right: var(--mb-1);
+  margin-right: auto;
 }
 
 .grid {
@@ -191,6 +192,105 @@ img {
   right: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  margin-right: var(--mb-0-25);
 }
 
 /* ==================== NAV STYLING ==================== */
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: var(--mb-0-5);
+  margin-right: var(--mb-0-25);
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+.navbar-brand {
+  font-family: var(--robotomono-font);
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .5s;
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover {
+  color: var(--first-color-alt);
+}
+
+/* SHOW MENU */
+.show-menu {
+  bottom: 0;
+}
+
+/* ACTIVE LINK */
+.active-link {
+  color: var(--first-color);
+}
+
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
