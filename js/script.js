@@ -58,3 +58,11 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+// TYPEWRITER EFFECT LOGICS
+
+new Typewriter('#typewritter', {
+  strings: ['Thao Nguyen.', 'a Computer Science Undergraduate.', 'a Web Developer.', 'a Mobile Developer.', 'a Competitive Programming Participant.'],
+  autoStart: true,
+  loop: true,
+  cursor: "|"
+});
