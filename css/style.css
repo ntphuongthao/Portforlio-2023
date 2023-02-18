@@ -652,6 +652,135 @@ img {
 
 
 /* ==================== EXPERIENCE ==================== */
+.qualification__content {
+  margin-bottom: var(--mb-1);
+  padding: auto;
+}
+
+.qualification__button {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  position: relative;
+  transform: translateX(15%);
+  margin-bottom: var(--mb-0-5);
+  margin-top: var(--mb-1);
+  color: var(--first-color);
+}
+
+.qualification__button:hover {
+  color: var(--first-color-alt);
+}
+
+.qualification__icon {
+  font-size: var(--h2-font-size);
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__journey {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qualification__underline {
+  padding-left: 18px;
+}
+
+.qualification__line {
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: var(--first-color-lighter);
+  align-items: flex-end;
+  transform: translateX(20px);
+  margin-right: 0;
+  padding: 0;
+}
+
+.qualification__time {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.qualification__calendar {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__calendar-icon {
+  font-size: var(--normal-font-size);
+  margin-right: var(--mb-0-5);
+}
+
+.qualificationLine_bottom {
+
+}
+
+.qualification__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.mirror-face {
+  border: 1px solid #FFF;
+  border-radius: 15px;
+  font-size: 2rem;
+  height: initial;
+  overflow: hidden;
+  position: relative;
+}
+
+.task {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+.abstract {
+  transition: 1.5s ease all;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  max-height: 0;
+  padding-top: var(--mb-1);
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotateX(-180deg);
+  transform-origin: top center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: 1.5s transform ease;
+}
+
+.details::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: gray;
+}
+
+.task:hover .details {
+  max-height: none;
+  overflow: visible;
+  visibility: visible;
+  transform: rotateX(0deg);
+  transition: 0.8s transform ease;
+}
 
 
 /* ==================== PORTFORLIO ==================== */

@@ -382,9 +382,9 @@
       <div class="qualification__container container">
         <div class="row mt-lg-0">
           <!-- Education -->
-          <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="education">
+          <div class="col-lg-5 col-sm-10 col-md-10 mt-2 qualification__content" id="education">
             <div class="qualification__button button--flex">
-              <i class="uil uil-graduation-cap"></i>Education
+              <i class="uil uil-graduation-cap qualification__icon"></i>Formal Education
             </div>
 
             <div id="education_timeline">
@@ -392,21 +392,21 @@
                 <!-- Timeline item -->
                 <div class="row">
                   <!-- Timeline Design -->
-                  <div class="col-auto text-center flex-column d-sm-flex">
+                  <div class="col-4 text-center flex-column d-sm-flex">
                     <div class="row h-50 qualification__journey">
                       <div class="col">
                         <span class="qualification__line"></span>
                       </div>
                       <div class="col">&nbsp;</div>
 
-                      <h5>
+                      <h5 class="qualification__time">
                         <span class="qualification__calendar badge">
-                          <i class="uil uil-calendar-alt"></i>2021
+                          <i class="uil uil-calendar-alt qualification__calendar-icon"></i>May 2021
                         </span>
                       </h5>
 
-                      <div class="row h-50 qualification__journey qualificationLine_bottom">
-                        <div class="col">
+                      <div class="row h-100 qualification__journey qualificationLine_bottom">
+                        <div class="col qualification__underline">
                           <span class="qualification__line"></span>
                         </div>
                         <div class="col">&nbsp;</div>
@@ -416,18 +416,65 @@
                   </div>
 
                   <!-- Timeline Content Events-->
-                  <div class="col py-2">
-                    <div class="card education-card mirror-face">
+                  <div class="col-8 py-2">
+                    <div class="card education-card mirror-face shadow2">
                       <div class="card-body">
                         <div class="task">
                           <div class="abstract">
-                            <h3 class="education-card-title qualification__title">Undergraduate</h3>
-                            <p class="education-card-desc qualification__subtitle">DePauw University</p>
+                            <h3 class="qualification__title">Undergraduate</h3>
+                            <p class="qualification__subtitle">DePauw University</p>
                           </div>
 
                           <div class="details">
-                            <p class="education-card-desc qualification__subtitle">
-                              This is additional contents get revealed on hover
+                            <p class="qualification__subtitle">
+                              A Computer Science and Mathematics major student, 
+                              expecting to graduate by May 2025 at the latest.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- Timeline Design -->
+                  <div class="col-4 text-center flex-column d-sm-flex">
+                    <div class="row h-50 qualification__journey">
+                      <div class="col">
+                        <span class="qualification__line"></span>
+                      </div>
+                      <div class="col">&nbsp;</div>
+
+                      <h5 class="qualification__time">
+                        <span class="qualification__calendar badge">
+                          <i class="uil uil-calendar-alt qualification__calendar-icon"></i>Feb 2023
+                        </span>
+                      </h5>
+
+                      <div class="row h-100 qualification__journey qualificationLine_bottom">
+                        <div class="col qualification__underline">
+                          <span class="qualification__line"></span>
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Timeline Content Events-->
+                  <div class="col-8 py-2">
+                    <div class="card education-card mirror-face shadow2">
+                      <div class="card-body">
+                        <div class="task">
+                          <div class="abstract">
+                            <h3 class="qualification__title">Online Participant</h3>
+                            <p class="qualification__subtitle">Codepath</p>
+                          </div>
+
+                          <div class="details">
+                            <p class="qualification__subtitle">
+                              Web Development Intermediate
                             </p>
                           </div>
                         </div>
@@ -440,13 +487,113 @@
           </div>
 
           <!-- Experience -->
-          <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="experience">
+          <div class="col-lg-7 col-sm-10 col-md-10 mt-2 qualification__content" id="experience">
             <div class="qualification__button button--flex">
-              <i class="uil uil-briefcase-alt"></i>Experience
+              <i class="uil uil-briefcase-alt"></i>Working Experience
             </div>
 
             <div id="experience_timeline">
+              <div class="container py-2">
+                <!-- Timeline item -->
+                <div class="row">
+                  <!-- Timeline Design -->
+                  <div class="col-3 text-center flex-column d-sm-flex">
+                    <div class="row h-50 qualification__journey">
+                      <div class="col">
+                        <span class="qualification__line"></span>
+                      </div>
+                      <div class="col">&nbsp;</div>
 
+                      <h5 class="qualification__time">
+                        <span class="qualification__calendar badge">
+                          <i class="uil uil-calendar-alt qualification__calendar-icon"></i>6 -12/2022
+                        </span>
+                      </h5>
+
+                      <div class="row h-100 qualification__journey qualificationLine_bottom">
+                        <div class="col qualification__underline">
+                          <span class="qualification__line"></span>
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Timeline Content Events-->
+                  <div class="col-9 py-2">
+                    <div class="card education-card mirror-face shadow2">
+                      <div class="card-body">
+                        <div class="task">
+                          <div class="abstract">
+                            <h3 class="qualification__title">Software Engineering Intern</h3>
+                            <p class="qualification__subtitle">Rakuna HR Tech Company</p>
+                          </div>
+
+                          <div class="details">
+                            <p class="qualification__subtitle">
+                              ● Familiarized with the technology and workflow of the company <br>
+                              ● Completed a one-month fullstack bootcamp on web development 
+                              and 6 mini web projects with a focus on Ruby/Ruby on Rails <br>
+                              ● Updated the company’s legacy code and implemented new features 
+                              and design edits for “CRM Email Campaign” product in <br>
+                              more than 40 approved pull requests utilizing React as a frontend 
+                              framework and Ruby/ Ruby on Rails for backend <br>
+                              ● Identified and fixed reported UI bugs
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- Timeline Design -->
+                  <div class="col-3 text-center flex-column d-sm-flex">
+                    <div class="row h-50 qualification__journey">
+                      <div class="col">
+                        <span class="qualification__line"></span>
+                      </div>
+                      <div class="col">&nbsp;</div>
+
+                      <h5 class="qualification__time">
+                        <span class="qualification__calendar badge">
+                          <i class="uil uil-calendar-alt qualification__calendar-icon"></i>Summer 2023
+                        </span>
+                      </h5>
+
+                      <div class="row h-100 qualification__journey qualificationLine_bottom">
+                        <div class="col qualification__underline">
+                          <span class="qualification__line"></span>
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Timeline Content Events-->
+                  <div class="col-9 py-2">
+                    <div class="card education-card mirror-face shadow2">
+                      <div class="card-body">
+                        <div class="task">
+                          <div class="abstract">
+                            <h3 class="qualification__title">Incoming SDE Intern</h3>
+                            <p class="qualification__subtitle">Amazon</p>
+                          </div>
+
+                          <div class="details">
+                            <p class="qualification__subtitle">
+                              Updated soon...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
