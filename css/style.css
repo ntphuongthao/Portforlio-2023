@@ -2,7 +2,7 @@
 
 /* ==================== VARIABLE CSS ==================== */
 :root {
-  --header-height: 3rem;
+  --header-height: 4rem;
 
   /* ========== COLORS ========== */
   /* DECIDE YOUR BROWSER THEME */
@@ -305,6 +305,7 @@ img {
   padding: 0;
   grid-template-columns: repeat(6, 1fr);
   gap: 0.5rem;
+  padding-top: var(--mb-1);
 }
 
 .nav__item {
