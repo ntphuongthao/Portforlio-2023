@@ -13,7 +13,8 @@
   --first-color-second: hsl(var(--hue-color), 71%, 47%);
   --first-color-alt: hsl(var(--hue-color), 55%, 50%);
   --first-color-lighter: hsl(var(--hue-color), 90%, 82%);
-  --matter-js: black;
+  --matter-js: #FFBF00;
+  --matter-js-highlight: black;
 
   --title-color: hsl(var(--hue-color), 10%, 15%);
   --text-color: hsl(var(--hue-color), 10%, 40%);
@@ -86,7 +87,8 @@ body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --first-color-alt: hsl(var(--hue-color), 55%, 50%);
   --first-color-lighter: hsl(var(--hue-color), 90%, 82%);
-  --matter-js: white;
+  --matter-js: #ffeb3b;
+  --matter-js-highlight: white;
 
   --title-color: hsl(var(--hue-color), 10%, 95%);
   --text-color: hsl(var(--hue-color), 10%, 75%);
@@ -185,12 +187,11 @@ img {
   position: absolute;
   cursor: grab;
   font-size: 30px;
-  color: #ffeb3b;
-  /* background-color: black; */
+  color: var(--matter-js)	;
 }
 .word.highlighted {
   font-weight: bold;
-  color: var(--matter-js);
+  color: var(--matter-js-highlight);
   /* background-color: black; */
 }
 
