@@ -252,13 +252,14 @@ img {
 
 /* ==================== NAV STYLING ==================== */
 .nav {
-  max-width: 968px;
+  max-width: 100%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: var(--mb-0-5);
   margin-right: var(--mb-0-25);
+  border-top: 1.5px solid var(--text-color);
 }
 
 .nav__logo,
@@ -272,7 +273,7 @@ img {
 }
 
 .nav__toggle {
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   cursor: pointer;
   margin-right: 2rem;
 }
@@ -301,15 +302,20 @@ img {
 }
 
 .nav__list {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  padding: 0;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+
+.nav__item {
+  display: inline-block;
 }
 
 .nav__link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -324,7 +330,7 @@ img {
 
 .nav__close {
   position: absolute;
-  right: 1.3rem;
+  right: 0.8rem;
   bottom: .5rem;
   font-size: 1.5rem;
   cursor: pointer;
