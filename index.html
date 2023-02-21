@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- COFFEE STYLING -->
-  <link rel="stylesheet" href="css/coffee.css">nk
+  <link rel="stylesheet" href="css/coffee.css">
 
   <title>Thao Nguyen portfolio</title>
 </head>
@@ -159,7 +159,11 @@
       <h2 class="section__title">About</h2>
       <span class="section__subtitle">My Introduction</span>
       <div class="about__container container grid">
-        <img src="assets/img/photo.jpeg" alt="My photo" class="about__img">
+        <div class="about__img-container">
+          <div>
+            <img src="assets/img/photo.jpeg" alt="My photo" class="about__img">
+          </div>
+        </div>
         <div class="about__data">
           <p class="about__description" id="home-about">
             Developer with experience in JavaScript/MERN 
@@ -635,22 +639,39 @@
     <!-- ======================== PORTFOLIO ======================== -->
     <section class="portfolio section" id="portfolio">
       <h2 class="section__title">Portfolio</h2>
+      <div class="portfolio__container">
+        <a href="https://github.com/ntphuongthao" target="_blank" class="portfolio__social-icon" id="myGithub">
+          <i class="uil uil-github"></i>
+        </a>
+      </div>
       <span class="section__subtitle">My most recent works</span>
-
-      <!-- <div class="slide-container">
-        <div class="slide-content">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img src="assets/img/" alt="Project 1" class="card-img">
-                </div>
-              </div>
+      <div class="portfolio__container">
+        <div class="portfolio__container portfolio__scroll">
+          <div class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="assets/photo.jpeg" alt="Thao Nguyen photo">
             </div>
+            <h2 class="section__subtitle">Thao Nguyen</h2>
+            <p>Some introduction</p>
+          </div>
+      
+          <div class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="assets/photo.jpeg" alt="Thao Nguyen photo">
+            </div>
+            <h2 class="section__subtitle">Thao Nguyen</h2>
+            <p>Some introduction</p>
+          </div>
+      
+          <div class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="assets/photo.jpeg" alt="Thao Nguyen photo">
+            </div>
+            <h2 class="section__subtitle">Thao Nguyen</h2>
+            <p>Some introduction</p>
           </div>
         </div>
-      </div> -->
+      </div>
     </section> 
 
     <!-- ======================== CONTACT ME! ======================== -->
