@@ -853,7 +853,7 @@ img {
 
 .portfolio__card {
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
   flex: 0 0 100%;
   align-items: center;
@@ -864,9 +864,7 @@ img {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio__image {
 
-}
 
 /* ==================== CONTACT ME ==================== */
 .contact_mail {
